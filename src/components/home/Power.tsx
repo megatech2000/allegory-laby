@@ -9,9 +9,7 @@ import { useEffect } from "react";
 
 const Power = () => {
   useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.default.init();
-    });
+    AOS.init();
   }, []);
 
   return (

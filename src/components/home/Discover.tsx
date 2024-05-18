@@ -1,17 +1,13 @@
 "use client";
-
 import Image from "next/image";
 import { discoverData } from "./data";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Discover = () => {
   useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.default.init();
-    });
+    AOS.init();
   }, []);
 
   return (

@@ -6,9 +6,7 @@ import { useEffect } from "react";
 
 const GetStarted = () => {
   useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.default.init();
-    });
+    AOS.init();
   }, []);
 
   return (

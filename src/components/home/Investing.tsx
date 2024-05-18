@@ -8,9 +8,7 @@ import { useEffect } from "react";
 
 const Investing = () => {
   useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.default.init();
-    });
+    AOS.init();
   }, []);
 
   return (

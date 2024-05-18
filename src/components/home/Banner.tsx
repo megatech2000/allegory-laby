@@ -7,9 +7,7 @@ import { useEffect } from "react";
 
 const Banner = () => {
   useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.default.init();
-    });
+    AOS.init();
   }, []);
 
   return (
