@@ -47,7 +47,7 @@ const GetStarted = () => {
         <div
           className="hidden xl:block absolute top-0 right-[-50px]"
           data-aos="fade-up"
-          data-aos-duration="800"
+          data-aos-duration="700"
         >
           <Image
             className="w-[80%]"
