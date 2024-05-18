@@ -15,10 +15,10 @@ const Footer = () => {
                 height={600}
               />
             </div>
-            <h1 className="py-3 mb-0 text-left">
+            <h2 className="py-3 mb-0 text-left">
               Transform Your
               <br /> Workflow with Labyrinth
-            </h1>
+            </h2>
             <p>
               Aliquam et tellus urna. Phasellus egetadipiscing elit.
               <br /> Mauris id nunc odio. Aliquam et tellus urna.

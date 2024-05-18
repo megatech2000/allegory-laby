@@ -13,7 +13,7 @@ const Features = () => {
   return (
     <section className="section-width padding-top">
       <div>
-        <div className="text-center" data-aos="fade-up" data-aos-duration="500">
+        <div className="text-center" data-aos="fade-up" data-aos-duration="700">
           <h2 className="mb-0">Our Features</h2>
           <div className="flex items-center justify-center">
             <p className="w-[600px] py-10 ">
@@ -35,7 +35,7 @@ const Features = () => {
             </div>
             <div className="bg-[#131416] rounded-b-xl relative">
               <div className="w-full h-[60px] bg-gradient-to-t from-[#131416] to-transparent absolute top-[-50px]"></div>
-              <div className="p-10" data-aos="fade-up" data-aos-duration="500">
+              <div className="p-10" data-aos="fade-up" data-aos-duration="700">
                 <h3>Unified Task Management</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur. Molestie lorem arcu
@@ -60,7 +60,7 @@ const Features = () => {
                 <div
                   className="p-10 "
                   data-aos="fade-up"
-                  data-aos-duration="500"
+                  data-aos-duration="400"
                 >
                   <h3>Real-time Collaboration</h3>
                   <p>
@@ -84,7 +84,7 @@ const Features = () => {
           </div>
           <div className=" bg-[#131416]  lg:bg-transparent lg:absolute lg:top-[50%] xl:top-[60%] relative">
             <div className="xl:hidden w-full h-[60px] bg-gradient-to-t from-[#131416] to-transparent absolute top-[-50px]"></div>
-            <div className="p-10" data-aos="fade-up" data-aos-duration="500">
+            <div className="p-10">
               <h3>Customizable Reporting</h3>
               <p className="md:w-[450px]">
                 Lorem ipsum dolor sit amet consectetur. Molestie lorem arcu

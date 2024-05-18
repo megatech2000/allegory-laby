@@ -13,11 +13,7 @@ const Discover = () => {
   return (
     <section className="section-width padding-top">
       <div className="flex items-center justify-center">
-        <div
-          className=" text-center w-[600px]"
-          data-aos="fade-up"
-          data-aos-duration="500"
-        >
+        <div className=" text-center w-[600px]">
           <h2 className="mb-0 ">
             Discover the Labyrinth
             <br /> Advantage
