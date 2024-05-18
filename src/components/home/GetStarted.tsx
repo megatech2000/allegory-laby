@@ -1,14 +1,6 @@
-"use client";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const GetStarted = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <section className="section-width padding-top">
       <div className="relative  xl:py-14">

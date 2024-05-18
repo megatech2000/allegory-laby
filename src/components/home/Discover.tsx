@@ -1,20 +1,13 @@
 "use client";
 import Image from "next/image";
 import { discoverData } from "./data";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const Discover = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <section className="section-width padding-top">
       <div className="flex items-center justify-center">
         <div className=" text-center w-[600px]">
-          <h2 className="mb-0 ">
+          <h2 className="mb-0 " data-aos="fade-up" data-aos-duration="400">
             Discover the Labyrinth
             <br /> Advantage
           </h2>

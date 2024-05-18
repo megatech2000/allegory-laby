@@ -1,15 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const Banner = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <section className="py-5">
       <div className="h-full px-5 xl:px-80">

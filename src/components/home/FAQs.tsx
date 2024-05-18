@@ -2,9 +2,8 @@
 
 import { FaPlus, FaTimes } from "react-icons/fa";
 import { faqData } from "./data";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import React, { useState, useEffect } from "react";
+
+import React, { useState } from "react";
 
 const FAQs = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -12,9 +11,6 @@ const FAQs = () => {
   const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <section className="section-width padding-top">

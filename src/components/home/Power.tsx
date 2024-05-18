@@ -1,17 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-
 const Power = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <section className="section-width padding-top">
       <div className="flex items-center justify-center text-center">

@@ -1,15 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const Features = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <section className="section-width padding-top">
       <div>
@@ -84,7 +77,7 @@ const Features = () => {
           </div>
           <div className=" bg-[#131416]  lg:bg-transparent lg:absolute lg:top-[50%] xl:top-[60%] relative">
             <div className="xl:hidden w-full h-[60px] bg-gradient-to-t from-[#131416] to-transparent absolute top-[-50px]"></div>
-            <div className="p-10">
+            <div className="p-10" data-aos="fade-up" data-aos-duration="400">
               <h3>Customizable Reporting</h3>
               <p className="md:w-[450px]">
                 Lorem ipsum dolor sit amet consectetur. Molestie lorem arcu
