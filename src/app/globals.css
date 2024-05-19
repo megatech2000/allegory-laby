@@ -100,3 +100,6 @@ body {
 .card-hover {
   transition: all 500ms;
 }
+.btnHover {
+  transition: all 500ms;
+}
