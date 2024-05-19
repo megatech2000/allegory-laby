@@ -68,7 +68,7 @@ const GetStarted = () => {
           viewport={{ once: true }}
         >
           <Image
-            className="w-[80%]"
+            className="w-[50%]"
             src="/images/banner-card.png"
             alt=""
             width={800}
