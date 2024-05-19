@@ -1,19 +1,32 @@
 import Image from "next/image";
 import { blogData } from "./data";
+import { motion } from "framer-motion";
 
 const Blog = () => {
   return (
     <section className="section-width padding-top">
       <div className="flex items-center justify-center">
         <div className="text-center w-[700px]">
-          <h2 className="mb-0">
+          <motion.h2
+            className="mb-0"
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             Insights & Inspiration Explore
             <br /> Our Blog
-          </h2>
-          <p className="py-5">
+          </motion.h2>
+          <motion.p
+            className="py-5"
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             Dive deeper into the world of finance with our engaging blog
             content. From expert financial advice to the latest industry trends
-          </p>
+          </motion.p>
         </div>
       </div>
       <div className="md:flex gap-5  pt-10">

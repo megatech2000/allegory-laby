@@ -1,24 +1,38 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const GetStarted = () => {
   return (
     <section className="section-width padding-top">
       <div className="relative  xl:py-14">
         <div className="bg-gradient-to-r from-[#101010] to-[#0d0d0d] border border-[#494848] xl:py-36 rounded-2xl xl:rounded-3xl xl:px-10 p-5 xl:p-0">
-          <h2
+          <motion.h2
             className="mb-0 font-extralight"
-            data-aos="zoom-in"
-            data-aos-duration="800"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
           >
             Get Started
             <br className="hidden xl:block" /> with Labyrinth
-          </h2>
-          <p className="py-5" data-aos="zoom-in" data-aos-duration="800">
+          </motion.h2>
+          <motion.p
+            className="py-5"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             Ready to experience the future of banking? Sign up for{" "}
             <br className="hidden xl:block" />
             Labyrinth today and unlock a world of convenience.
-          </p>
-          <div data-aos="zoom-in" data-aos-duration="800">
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <form action="#">
               <input
                 type="text"
@@ -29,11 +43,13 @@ const GetStarted = () => {
                 Get Started
               </button>
             </form>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
             className="xl:hidden mt-10"
-            data-aos="zoom-in"
-            data-aos-duration="800"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
           >
             <Image
               className="w-full"
@@ -42,12 +58,14 @@ const GetStarted = () => {
               width={1000}
               height={1000}
             />
-          </div>
+          </motion.div>
         </div>
-        <div
+        <motion.div
           className="hidden xl:block absolute top-0 right-[-50px]"
-          data-aos="fade-up"
-          data-aos-duration="700"
+          initial={{ opacity: 0, x: 500 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
         >
           <Image
             className="w-[80%]"
@@ -56,7 +74,7 @@ const GetStarted = () => {
             width={800}
             height={800}
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

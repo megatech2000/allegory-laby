@@ -6,6 +6,8 @@ import Link from "next/link";
 import { HiMiniBars2 } from "react-icons/hi2";
 import { IoCloseOutline } from "react-icons/io5";
 
+import { exit } from "process";
+
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -45,11 +47,11 @@ const NavBar = () => {
           />
         </div>
         <div
-          className={`text-white md:flex text-center md:text-left  lg:gap-6 bg-[#111111] md:p-3 px-16 md:px-5 rounded-b-lg  md:rounded-full border border-[#525151] absolute top-[50px] left-0 right-0  md:static
-         ${isMenuOpen ? "" : "hidden"}`}
+          className={`text-white md:flex text-center md:text-left  lg:gap-6 bg-[#111111] md:p-3 px-16 md:px-5 rounded-b-lg  md:rounded-full border border-[#525151] absolute top-[60px] left-0 right-0  md:static
+         ${isMenuOpen ? "openMenu" : "hiddenMenu"}`}
         >
           {links.map((item, i) => (
-            <div className="pt-7 md:pt-0">
+            <div className="pt-7 md:pt-0 ">
               <Link
                 className="hover:bg-[#fff] hover:text-black px-4 py-2 rounded-full navbar-hover font-light text-[#8c8a8a]"
                 href={item.path}

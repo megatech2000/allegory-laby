@@ -2,7 +2,7 @@
 
 import { FaPlus, FaTimes } from "react-icons/fa";
 import { faqData } from "./data";
-
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 
 const FAQs = () => {
@@ -16,22 +16,38 @@ const FAQs = () => {
     <section className="section-width padding-top">
       <div className="flex items-center justify-center">
         <div className="text-center">
-          <h2 className="mb-0">Your Queries Answered: FAQs</h2>
-          <p className="py-5">
+          <motion.h2
+            className="mb-0"
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Your Queries Answered: FAQs
+          </motion.h2>
+          <motion.p
+            className="py-5"
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             Find answers to commonly asked questions about Labyrinth and banking
             in general.
-          </p>
+          </motion.p>
         </div>
       </div>
       <div>
         <div className="xl:px-60">
           {faqData.map((item, i) => (
-            <div
+            <motion.div
               className="p-5 rounded-lg border border-[#333232] mt-5 hover:bg-[#181818] card-hover cursor-pointer"
               key={i}
               onClick={() => toggleAccordion(i)}
-              data-aos="zoom-in"
-              data-aos-duration="800"
+              initial={{ x: -200, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
             >
               <div className="flex items-center justify-between gap-1">
                 <h6 className="font-light">{item.title}</h6>
@@ -49,7 +65,7 @@ const FAQs = () => {
               >
                 <p className="text-sm pt-5">{item.desc}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

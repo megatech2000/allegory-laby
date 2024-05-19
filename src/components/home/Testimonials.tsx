@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import React from "react";
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 // Import Swiper styles
 import "swiper/css";
@@ -18,15 +19,27 @@ const Testimonials = () => {
     <section className=" padding-top">
       <div className="flex items-center justify-center">
         <div className="flex flex-col items-center justify-center text-center">
-          <h2 className="w-[600px]">
+          <motion.h2
+            className="w-[600px]"
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             Voices of Innovation,
             <br /> Testimonials
-          </h2>
-          <p className="w-[400px] md:w-[700px]">
+          </motion.h2>
+          <motion.p
+            className="w-[400px] md:w-[700px]"
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             Discover what the coding community is saying about Glossy in our
             Testimonials section. Immerse yourself in firsthand experiences as
             developers share.
-          </p>
+          </motion.p>
         </div>
       </div>
       <div className="relative px-5">
