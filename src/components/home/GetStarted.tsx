@@ -61,7 +61,7 @@ const GetStarted = () => {
           </motion.div>
         </div>
         <motion.div
-          className="hidden xl:block absolute top-0 right-[-50px]"
+          className="hidden xl:block absolute top-0 right-[-80px]"
           initial={{ opacity: 0, x: 500 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
