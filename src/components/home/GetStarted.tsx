@@ -52,7 +52,7 @@ const GetStarted = () => {
             viewport={{ once: true }}
           >
             <Image
-              className="w-[80%]"
+              className="w-full"
               src="/images/banner-card.png"
               alt=""
               width={1000}
@@ -61,14 +61,14 @@ const GetStarted = () => {
           </motion.div>
         </div>
         <motion.div
-          className="hidden xl:block absolute top-0 right-[-80px]"
+          className="hidden xl:block absolute top-0 right-[-300px]"
           initial={{ opacity: 0, x: 500 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
           <Image
-            className="w-[80%]"
+            className="max-w-[60%]"
             src="/images/banner-card.png"
             alt=""
             width={800}
